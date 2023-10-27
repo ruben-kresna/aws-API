@@ -19,13 +19,13 @@ There are 4 methods for the API:
 getItem(id) is a GET method that retrieves an item with the associated id in MyTable. The id parameter must be an integer.
   <br>The method path is /mytable
   <br>Example:
-  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable?id=2
-
+  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable?id=2    <br>
+  
 getItemAll() is a GET method that retrieves all items in MyTable.
   <br>The method path is /mytable_all
   <br>Example:
-  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable_all
-
+  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable_all    <br>
+  
 addItem(requestBody) is a POST method that adds an requestBody as an item to MyTable. requestBody must be in json format.
   <br>The method path is /mytable
   <br>Example:
@@ -33,11 +33,16 @@ addItem(requestBody) is a POST method that adds an requestBody as an item to MyT
     'id': '15',
     'name': 'Doll',
     'description': 'Pikachu plushie'
-  }
+  }<br>
 
 deleteItem(id)  is a DELETE method that deletes an item in MyTable with an id of id. id must be in json format.
   <br>The method path is /mytable
   <br>Example:
   <br>requestBody = {
     'id': '15'
-  }
+  }<br>
+
+Rate limits <br>
+Rate: 2 requests per second <br>
+Burst: 20 requests <br>
+Quota: 100,000 requests per day <br>
