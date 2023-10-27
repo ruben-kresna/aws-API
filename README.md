@@ -17,27 +17,27 @@ There are 4 methods for the API:
 4. deleteItem(id)
 
 getItem(id) is a GET method that retrieves an item with the associated id in MyTable. The id parameter must be an integer.
-  The method path is /mytable
-  Example:
-  https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable?id=2
+  <br>The method path is /mytable
+  <br>Example:
+  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable?id=2
 
-getItemAll() is a GET method that retrieves all items in MyTable
-  The method path is /mytable_all
-  Example:
-  https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable_all
+getItemAll() is a GET method that retrieves all items in MyTable.
+  <br>The method path is /mytable_all
+  <br>Example:
+  <br>https://c1fla4vbr8.execute-api.us-east-2.amazonaws.com/MyTableAPI/mytable_all
 
 addItem(requestBody) is a POST method that adds an requestBody as an item to MyTable. requestBody must be in json format.
-  The method path is /mytable
-  Example:
-  requestBody = {
+  <br>The method path is /mytable
+  <br>Example:
+  <br>requestBody = {
     'id': '15',
     'name': 'Doll',
     'description': 'Pikachu plushie'
   }
 
 deleteItem(id)  is a DELETE method that deletes an item in MyTable with an id of id. id must be in json format.
-  The method path is /mytable
-  Example:
-  requestBody = {
+  <br>The method path is /mytable
+  <br>Example:
+  <br>requestBody = {
     'id': '15'
   }
