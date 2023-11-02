@@ -1,5 +1,4 @@
-# aws_jitto
-Jitto Techincal Challenge
+# aws_API
 
 This API calls a DynamoDB table called MyTable using Lambda Functions through the AWS API Gateway. MyTable's partition key is a String 'id' and its attributes are 'name' and 'description' which are also both strings. There is no sort key.
 
