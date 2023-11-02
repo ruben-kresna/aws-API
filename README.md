@@ -2,7 +2,7 @@
 
 This API calls a DynamoDB table called MyTable using Lambda Functions through the AWS API Gateway. MyTable's partition key is a String 'id' and its attributes are 'name' and 'description' which are also both strings. There is no sort key.
 
-The API Key is required to invoke the API, which can be found in import requests.py (this is bad practice, but it is just for a demonstration, so I think it is fine)
+The API Key is required to invoke the API, which can be found in import requests.py (invoking without the key will return {"message":"Forbidden"})
 
 The import requests.py file is an example of how to use the APIs.
 
